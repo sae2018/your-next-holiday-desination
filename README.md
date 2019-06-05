@@ -11,8 +11,8 @@ This project is to create the Your Next Holiday Destination website to find acti
  
 I designed this website to make it easy and intuitive for anyone to access the latest content based on their local or worldwide search. Users want to see the results in an easy to read format and I have made this display as easy as possible in an understandable way within the same page. My original wireframe is available at https://your-next-holiday-destination-sae2018.c9users.io/assets/img/wireframe.png.
 
-- As a holidaymaker, I want to view a list of hotels in the area I'd like to stay in, so that I choose somewhere to stay for my holiday.
-- As a holidaymaker, I want to view a list of the local parks, so that I can take the children for walks in the area we're staying in.
+- As a holidaymaker, I want to view a list of hotels in the area I'd like to stay in, to choose somewhere to stay.
+- As a holidaymaker, I want to view a list of the local parks, so that I can take my children for walks in that area.
 - As a parent, I want to find the amusement parks around where I live, so that I can take my children on a day out there.
 - As a friend, I want to book a table at a restaurant, so that my friends and I can go out for a meal together.
 - As a friend, I want to find a local pub to where I am to go to after the restaurant to socialise with my friends.
@@ -20,8 +20,8 @@ I designed this website to make it easy and intuitive for anyone to access the l
 
 ## Features
 
-Forms - The left had side of the design is designed to obtaining the information needed to query Google API with activity/company type and the city.
-Map - The right hand side of the design is designed to display the map with pin locations for all the results found of the activity/company type in and around that city, with the detailed listings relating to each pin under the map.
+- Forms - The left had side of the design is designed to obtaining the information needed to query Google API with activity/company type and the city.
+- Map - The right hand side of the design is designed to display the map with pin locations for all the results found of the activity/company type in and around that city, with the detailed listings relating to each pin under the map.
 
  
 ### Existing Features
@@ -60,6 +60,8 @@ I have also used the following websites as references for code or content:
     - This project used **BootstrapMade** to get the basic layout template.
 - [StackOverflow](www.stackoverflow.com)
     - This project used **StackOverflow** for information about how to post form data back to the same page using PHP.
+- [FontAwesome](www.fontawesome.com)
+    - This project used **FontAwesome** for graphics used for hamburger menu icon and return to top icon.
 
 
 ## Testing
@@ -72,32 +74,39 @@ To test my site's validity I used:
 
 For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
 
-1. Contact form:
-    1. Go to the "Bookings" page
-    2. Try to submit the empty form and verify that an error message about the required fields appears
-    3. Try to submit the form with an invalid email address and verify that a relevant error message appears
-    4. Please note: The form on this page will not submit, as we have not yet been taught how to do that
+1. What are you looking for form (hotels):
+    1. Click on "Search" in the menu bar or the "Search Now" call to action button or scroll down the page
+    2. Select the "Lodging" option from the dropdown list
+    3. Click the "Submit" button
+    4. Type the city you are searching for 'lodging' in and click on the correct autocompleted option
 
-2. Photos:
-    1. Go to the "Photos and Videos" page
-    2. Left click on one of the thumbnail photos or the photo name and verify that the photo loads full-size into a new browser window
-    3. Right click on the image to confirm that you can copy or save the photo
+2. What are you looking for form (parks):
+    1. Click on "Search" in the menu bar or the "Search Now" call to action button or scroll down the page
+    2. Select the "Park" option from the dropdown list
+    3. Click the "Submit" button
+    4. Type the city you are searching for 'park' in and click on the correct autocompleted option
 
-3. Videos:
-    1. Go to the "Photos and Videos" page
-    2. Confirm that the video plays automatically (in some browsers) or click the play button to start it
-    3. Left click on the three dots to confirm that the video can be downloaded
+3. What are you looking for form (amusement parks):
+    1. Click on "Search" in the menu bar or the "Search Now" call to action button or scroll down the page
+    2. Select the "Amusement Park" option from the dropdown list
+    3. Click the "Submit" button
+    4. Type the city you live in and click on the correct autocompleted option
 
-4. Songs:
-    1. Go to the "Songs" page
-    2. Left click play on one of the audio file sliders and verify that the music starts
-    3. Left click on the song name to verify that the audio clip can be loaded into a new tab
-    4. Left click on the three dots to confirm that the audio file can be downloaded
+4. What are you looking for form (restaurant):
+    1. Click on "Search" in the menu bar or the "Search Now" call to action button or scroll down the page
+    2. Select the "Restaurant" option from the dropdown list
+    3. Click the "Submit" button
+    4. Type the city you live in and click on the correct autocompleted option
 
+5. What are you looking for form (bar):
+    1. Click on "Search" in the menu bar or the "Search Now" call to action button or scroll down the page
+    2. Select the "Bar" option from the dropdown list
+    3. Click the "Submit" button
+    4. Type the city you live in and click on the correct autocompleted option
 
-The website has been tested with all the major browsers and remains stable on all versions in all sizes. In order for this to happen I have used semantic structured code and utilised the browser specific CSS3 code for transitions on the transitions.
+The website has been tested with all the major browsers and remains stable on all versions in all sizes. In order for this to happen I have used semantic structured code and utilised the browser specific CSS3 code.
 
-There were some issues with the code on some of the pages during creation and testing, such as not stacking properly in different screen sizes and transitions not working as expected, but these problems have been solved with a little research beyond what we have been taught so far.
+There were some issues with the code on some of the pages during creation and testing, such as not stacking properly in different screen sizes and other things not working as expected, but these problems have been solved with a little research beyond what we have been taught so far.
 
 
 ## Deployment
@@ -111,12 +120,13 @@ Differences between the deployed version and the development version:
 ## Credits
 Thanks for their help when I got stuck go to the Code Institute Tutor Team and to my mentor who went through my work before submission. I would also like to thank the websites whose resources I used both when I was stuck and for website functionality, as listed in the [## Technologies Used](#technologies-used) section above.
 
+
 ### Content
-- The 'About Us' text for the footer was copied from the [Wikipedia article The Monkees](https://en.wikipedia.org/wiki/The_Monkees)
+- All content has been written by myself
 
 
 ### Media
-- The photos, videos and audio used in this site were obtained from the resources section for the project. In order to use the images of new material on the homepage I sought permission from The Monkees official website, but as at today 11/10/18 I have not yet heard whether I have permission to use these images or not, and therefore have a placeholder image to show where they would go.
+- The photos used in this site were obtained from [Google Images](images.google.com). In order to use the images for this project I used the filters on the page to only display images that were suitable for use with this project.
 
 
 ### Acknowledgements
