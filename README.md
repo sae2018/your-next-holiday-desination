@@ -54,13 +54,13 @@ The website makes use of:
     - This project uses **GitHub** for version publishing.
 
 I have also used the following websites as references for code or content:
-- [W3 Schools](www.w3schools.com)
+- [W3 Schools](https://www.w3schools.com)
     - This project used **W3 Schools** to reference semantic code.
-- [BootstrapMade](www.bootstrapmade.com)
+- [BootstrapMade](https://www.bootstrapmade.com)
     - This project used **BootstrapMade** to get the basic layout template.
-- [StackOverflow](www.stackoverflow.com)
+- [StackOverflow](https://www.stackoverflow.com)
     - This project used **StackOverflow** for information about how to post form data back to the same page using PHP.
-- [FontAwesome](www.fontawesome.com)
+- [FontAwesome](https://www.fontawesome.com)
     - This project used **FontAwesome** for graphics used for hamburger menu icon and return to top icon.
 
 
@@ -126,7 +126,7 @@ Thanks for their help when I got stuck go to the Code Institute Tutor Team and t
 
 
 ### Media
-- The photos used in this site were obtained from [Google Images](images.google.com). In order to use the images for this project I used the filters on the page to only display images that were suitable for use with this project.
+- The photos used in this site were obtained from [Google Images](https://images.google.com). In order to use the images for this project I used the filters on the page to only display images that were suitable for use with this project.
 
 
 ### Acknowledgements
