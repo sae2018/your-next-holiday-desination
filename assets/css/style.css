@@ -130,7 +130,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------------------------------------------------
-# Hero Section
+# Hero
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
@@ -470,8 +470,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
 }
 
-/* Sections Header
---------------------------------*/
+/*--------------------------------------------------------------
+# Sections Header
+--------------------------------------------------------------*/
 .section-header .section-title {
   font-size: 32px;
   color: #111;
@@ -487,8 +488,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #999;
 }
 
-/* Find Hotels Section
---------------------------------*/
+/*--------------------------------------------------------------
+# Find Hotels
+--------------------------------------------------------------*/
 #search {
   margin: 0px;
   background: #c0c0c0;
@@ -568,8 +570,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 14px;
 }
 
-/* Map Section
---------------------------------*/
+/*--------------------------------------------------------------
+# Map
+--------------------------------------------------------------*/
 .myButton {
 	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
 	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
