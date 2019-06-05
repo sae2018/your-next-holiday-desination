@@ -625,12 +625,23 @@ table {
 }
 
 .ex1 {
+  text-align: right;
   width: 840px;
   height: 410px;
   margin: auto;
   padding: 10px;
   overflow: scroll;
   background-color: #f0f0f0;
+}
+
+div.ex1 {
+  margin-right: 13px;
+}
+
+@media (max-width: 768px) {
+  div.ex1 {
+    margin-right: 0px;
+  }
 }
 
 #listing {
