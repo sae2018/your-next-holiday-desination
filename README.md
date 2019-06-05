@@ -1,10 +1,10 @@
-# Stephen Elcombe - [Interactive Frontend Development Milestone Project](https://sae2018.github.io/your-next-holiday-desination/index.php) - Create a single page application that relies heavily on one or more APIs
+# Stephen Elcombe - Interactive Frontend Development Milestone Project - Create a single page application that relies heavily on one or more APIs
 
-This project is to create the Your Next Holiday Destination website to find activities, accommodation, restaurants etc. in both your local area and by any city in the world you specify. It fulfils the needs stated in the client's brief that you can:
-1) Select a destination city
-2) Find tourist attractions
-3) Find accommodation
-4) Find bars and restaurants
+This project is to create the [Your Next Holiday Destination](https://sae2018.github.io/your-next-holiday-desination/index.php) website to find activities, accommodation, restaurants etc. in both your local area and by any city in the world you specify. It fulfils the needs stated in the client's brief that you can:
+1. Select a destination city
+2. Find tourist attractions
+3. Find accommodation
+4. Find bars and restaurants
 
  
 ## UX
