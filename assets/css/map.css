@@ -1,0 +1,44 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#map_canvas {
+  height: 100%;
+//  width: 80%;
+}
+
+#side_bar {
+  height: 100%;
+  width: 300px;
+  overflow: auto;
+  padding-left: 10px;
+}
+
+@media print {
+  html, body {
+    height: auto;
+  }
+
+  #map_canvas {
+    height: 650px;
+  }
+}
+#search-panel {
+        position: absolute;
+        top: 5px;
+        left: 100px;
+        margin-left: 0px;
+        width: 350px;
+        z-index: 5;
+        background-color: #fff;
+        padding: 5px;
+        border: 1px solid #999;
+      }
+      #target {
+        width: 345px;
+      }
+
+

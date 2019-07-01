@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Your Next Holiday Destination</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Poppins" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="assets/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="assets/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="assets/lib/animate/animate.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <!-- Header -->
+    <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <h1><a href="https://your-next-holiday-destination-sae2018.c9users.io">Your Next Holiday Destination</a></h1>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="https://your-next-holiday-destination-sae2018.c9users.io">Home</a></li>
+          <li><a href="#search">Search</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+    </header>
+    <!-- #header -->
+
+    <!-- Hero -->
+    <section id="hero">
+      <div class="hero-container">
+        <h2>Welcome to Your Next Holiday Destination</h2>
+        <h2>We find you activities, accommodation and much more around the area you'll be staying in</h2>
+        <a href="#search" class="btn-get-started">Search Now</a>
+      </div>
+    </section><!-- #hero -->
+  
+  
+    <main id="main">
+  
+      <!-- Search -->
+      <section id="search">
+        <div class="container">
+          <div class="row search-text"><h3>To search for any type of activity or company simply:</h3>
+            1) Type in the company name or place type, i.e. amusement park, car rental, hotel etc. (suggestions will automatically appear)<br>2) Follow this with ' near '<br>3) Type in the location you would like to search within, i.e. Dublin, London, Austin etc. (suggestions will automatically appear)
+          </div>
+          <div class="row search-container">
+  
+      <script>
+        // This example adds a search box to a map, using the Google Place Autocomplete
+        // feature. People can enter geographical searches. The search box will return a
+        // pick list containing a mix of places and predicted search terms.
+  
+        // This example requires the Places library. Include the libraries=places
+        // parameter when you first load the API. For example:
+        // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 8
+        });
+      }
+  
+        function initAutocomplete() {
+          var map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: -33.8688, lng: 151.2195},
+            zoom: 13,
+            mapTypeId: 'roadmap'
+          });
+  
+          // Create the search box and link it to the UI element.
+          var input = document.getElementById('pac-input');
+          var searchBox = new google.maps.places.SearchBox(input);
+          map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+  
+          // Bias the SearchBox results towards current map's viewport.
+          map.addListener('bounds_changed', function() {
+            searchBox.setBounds(map.getBounds());
+          });
+  
+          var markers = [];
+          // Listen for the event fired when the user selects a prediction and retrieve
+          // more details for that place.
+          searchBox.addListener('places_changed', function() {
+            var places = searchBox.getPlaces();
+  
+            if (places.length == 0) {
+              return;
+            }
+  
+            // Clear out the old markers.
+            markers.forEach(function(marker) {
+              marker.setMap(null);
+            });
+            markers = [];
+  
+            // For each place, get the icon, name and location.
+            var bounds = new google.maps.LatLngBounds();
+            places.forEach(function(place) {
+              if (!place.geometry) {
+                console.log("Returned place contains no geometry");
+                return;
+              }
+              var icon = {
+                url: place.icon,
+                size: new google.maps.Size(71, 71),
+                origin: new google.maps.Point(0, 0),
+                anchor: new google.maps.Point(17, 34),
+                scaledSize: new google.maps.Size(25, 25)
+              };
+  
+              // Create a marker for each place.
+              markers.push(new google.maps.Marker({
+                map: map,
+                icon: icon,
+                title: place.name,
+                position: place.geometry.location
+              }));
+  
+              if (place.geometry.viewport) {
+                // Only geocodes have viewport.
+                bounds.union(place.geometry.viewport);
+              } else {
+                bounds.extend(place.geometry.location);
+              }
+            });
+            map.fitBounds(bounds);
+          });
+        }
+
+      </script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAeIAedIK_nUWFEhY9n49alKCbiQUashCw&libraries=places&callback=initAutocomplete"
+           async defer></script>
+      <input id="pac-input" class="controls" type="text" placeholder="Search Box">
+      <div id="map"></div>
+      </section><!-- #search -->
+  
+    </main>
+  
+  <!-- Footer -->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+  
+        </div>
+      </div>
+  
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <strong>Your Next Holiday Destination</strong>. All Rights Reserved
+        </div>
+      </div>
+    </footer><!-- #footer -->
+  
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  
+    <!-- JavaScript Libraries -->
+    <script src="assets/lib/jquery/jquery.min.js"></script>
+    <script src="assets/lib/jquery/jquery-migrate.min.js"></script>
+    <script src="assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/lib/easing/easing.min.js"></script>
+    <script src="assets/lib/wow/wow.min.js"></script>
+    <script src="assets/lib/waypoints/waypoints.min.js"></script>
+    <script src="assets/lib/counterup/counterup.min.js"></script>
+    <script src="assets/lib/superfish/hoverIntent.js"></script>
+    <script src="assets/lib/superfish/superfish.min.js"></script>
+  
+    <!-- Template Main Javascript File -->
+    <script src="assets/js/main.js"></script>
+  
+  </body>
+</html>
